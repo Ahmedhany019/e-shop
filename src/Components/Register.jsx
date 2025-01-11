@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom"
+
 function Register({setIsLogin}) {
   return (
     <div>
@@ -17,9 +19,9 @@ function Register({setIsLogin}) {
                 <label className="block text-gray-700">Password</label>
                 <input type="password" name="password" placeholder="Enter Password" className="w-full px-3 py-2 border"/>
             </div>
-            <div className="mb-4">
+            <Link to="/" className="mb-4">
                 <button className="w-full bg-red-600 text-white py-2">Sign Up</button>
-            </div>
+            </Link>
         </form>
         <div className="flex items-center justify-between">
             <span className="text-gray-700">Already have an account?</span>

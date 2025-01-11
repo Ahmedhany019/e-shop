@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom"
+
 function Login({setIsLogin}) {
   return (
     <div>
@@ -20,9 +22,9 @@ function Login({setIsLogin}) {
                 </label>
                 <a href="#" className="text-red-800">Forgot Password</a>
             </div>
-            <div className="mb-4">
+            <Link to="/" className="mb-4">
                 <button className="w-full bg-red-600 text-white py-2">Login</button>
-            </div>
+            </Link>
         </form>
         <div className="flex items-center justify-between">
             <span className="text-gray-700">Don&apos;t have an account?</span>
