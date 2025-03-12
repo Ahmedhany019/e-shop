@@ -28,7 +28,7 @@ function Product() {
             <p className="text-gray-800 mb-4 font-semibold text-xl">${product.price}</p>
 
             <div className="flex items-center mb-4 gap-x-2">
-                <input type="number" id="quantity"className="w-16 px-2 py-1 border"/>
+                <input min={0} type="number" id="quantity"className="w-16 px-2 py-1 border"/>
                 <button className="bg-red-600 text-white px-4 py-1.5 hover:bg-red-800">Add to Cart</button>
             </div>
             <div className="flex flex-col gap-y-4 mt-4">
